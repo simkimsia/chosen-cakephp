@@ -32,6 +32,7 @@ class ChosenHelper extends AppHelper
         'framework' => 'jquery',
         'class' => 'chzn-select',
         'asset_base' => '/chosen/chosen',
+        'script_location' => 'script'
     );
 
     /**
@@ -161,7 +162,7 @@ class ChosenHelper extends AppHelper
         $this->Html->script($base . '/' . $script, array('inline' => false));
 
         // Add the script.
-        $this->_View->append('script', $this->getElement($elm));
+        $this->_View->append($this->settings['script_location'], $this->getElement($elm));
     }
 
     /**
