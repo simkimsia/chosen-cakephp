@@ -32,6 +32,7 @@ class ChosenHelper extends AppHelper
         'framework' => 'jquery',
         'class' => 'chzn-select',
         'asset_base' => '/chosen/chosen',
+        'lib_script_location' => 'script',
     );
 
     /**
@@ -158,7 +159,7 @@ class ChosenHelper extends AppHelper
         // 3rd party assets.
         $script = sprintf($script, $this->debug === true ? 'js' : 'min.js');
         $this->Html->css($base . '/chosen.css', null, array('inline' => false));
-        $this->Html->script($base . '/' . $script, array('inline' => false));
+        $this->Html->script($base . '/' . $script, array('inline' => false, 'block' => $this->setting['lib_script_location']));
 
         // Add the script.
         $this->_View->append('script', $this->getElement($elm));
