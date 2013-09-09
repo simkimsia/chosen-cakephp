@@ -1,8 +1,8 @@
 {
-    "name": "paulredmond/chosen-cakephp",
-    "description": "Chosen CakePHP plugin for CakePHP 2",
+    "name": "simkimsia/forked-chosen-cakephp",
+    "description": "Forked Chosen CakePHP plugin for CakePHP 2",
     "keywords": ["plugin", "cakephp"],
-    "homepage": "https://github.com/paulredmond/chosen-cakephp",
+    "homepage": "https://github.com/simkimsia/chosen-cakephp",
     "version": "2.1.4",
     "license": "MIT",
     "type": "cakephp-plugin",
@@ -17,7 +17,7 @@
         },
         {
             "name": "Github Contributors",
-            "homepage": "https://github.com/paulredmond/chosen-cakephp/graphs/contributors"
+            "homepage": "https://github.com/simkimsia/chosen-cakephp/graphs/contributors"
         }
     ],
     "require": {
