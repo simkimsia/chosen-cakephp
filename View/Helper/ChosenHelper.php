@@ -160,7 +160,7 @@ class ChosenHelper extends AppHelper
         // 3rd party assets.
         $script = sprintf($script, $this->debug === true ? 'js' : 'min.js');
         $this->Html->css($base . '/chosen.css', null, array('inline' => false));
-        $this->Html->script($base . '/' . $script, array('inline' => false, 'block' => $this->setting['lib_script_location']));
+        $this->Html->script($base . '/' . $script, array('inline' => false, 'block' => $this->settings['lib_script_location']));
 
         // Add the script.
         $this->_View->append($this->settings['script_location'], $this->getElement($elm));
